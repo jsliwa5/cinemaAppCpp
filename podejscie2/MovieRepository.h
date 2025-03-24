@@ -1,0 +1,60 @@
+#pragma once
+#include "Database.h"
+#include "Movie.h"
+#include <optional>
+
+
+class MovieRepository
+{
+private:
+	soci::session& sql = Database::getInstance().getSession();
+
+public:
+
+    void saveMovie(const Movie& movie) {
+        sql << "INSERT INTO Movies (title, description, director, yearOfRelease, duration, genre) "
+            "VALUES (:title, :description, :director, :yearOfRelease, :duration, :genre)",
+            soci::use(movie);
+    }
+
+    std::optional<Movie> findMovieById(int id) {
+        Movie movie;
+        soci::indicator ind;
+        sql << "SELECT * FROM Movies WHERE id_movie = :id", soci::use(id), soci::into(movie, ind);
+
+        if (ind == soci::i_ok) {
+            return movie;
+        }
+        return std::nullopt;
+    }
+
+    void updateMovieById(int id, const Movie& movie) {
+        sql << "UPDATE Movies SET title = :title, description = :description, director = :director, "
+            "yearOfRelease = :yearOfRelease, duration = :duration, genre = :genre "
+            "WHERE id_movie = :id",
+            soci::use(movie), soci::use(id);
+    }
+
+    void deleteMovieById(int id) {
+        sql << "DELETE FROM Movies WHERE id_movie = :id", soci::use(id);
+    }
+
+    std::optional<Movie> findMovieByTitle(const std::string& title) {
+        Movie movie;
+        soci::indicator ind;
+        sql << "SELECT * FROM Movies WHERE title = :title", soci::use(title), soci::into(movie, ind);
+
+        if (ind == soci::i_ok) {
+            return movie;
+        }
+        return std::nullopt;
+    }
+
+    bool existsById(int id) {
+        int count = 0;
+        sql << "SELECT COUNT(*) FROM Movies WHERE id_movie = :id", soci::use(id), soci::into(count);
+        return count > 0;
+    }
+
+};
+

@@ -1,0 +1,9 @@
+Package: soci
+Version: 4.0.3
+Port-Version: 3
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 94de93acb60bd9a88017d6a53423a8e83ce1c10fd86634f601215ad93bb3f5c4
+Description: SOCI - The C++ Database Access Library
+Status: install ok half-installed

@@ -1,0 +1,10 @@
+﻿  The vcpkg manifest was disabled, but we found a manifest file in C:\Users\kubal\Desktop\edziennik\projekt\podejscie2\. You may want to enable vcpkg manifests in your properties page or pass /p:VcpkgEnableManifest=true to the msbuild invocation.
+  Main.cpp
+  Generating code
+  2 of 587 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  podejscie2.vcxproj -> C:\Users\kubal\Desktop\edziennik\projekt\podejscie2\x64\Release\podejscie2.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.

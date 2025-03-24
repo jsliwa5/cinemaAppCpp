@@ -1,0 +1,10 @@
+{
+    "name": "soci-sqlite3-project",
+    "version": "1.0.0",
+    "dependencies": [
+    {
+      "name": "soci",
+      "features": ["sqlite3"]
+    }
+  ]
+}

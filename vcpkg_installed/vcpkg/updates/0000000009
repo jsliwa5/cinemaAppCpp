@@ -1,0 +1,7 @@
+Package: soci
+Feature: sqlite3
+Depends: sqlite3
+Architecture: x64-windows
+Multi-Arch: same
+Description: Build sqlite3 backend
+Status: install ok half-installed
