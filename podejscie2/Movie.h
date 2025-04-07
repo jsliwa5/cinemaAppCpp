@@ -1,7 +1,6 @@
 #pragma once
 #include<string>
 #include<soci/soci.h>
-#include "MovieDto.h"
 
 //also movieDao
 class Movie
@@ -23,16 +22,13 @@ public:
 	Movie(std::string title, std::string description, std::string director, 
 		int yearOfRelease, int duration, std::string genre, int id = -1) :
 
-		id_movie(id), title(title), description(description),
+		id_movie(id), title(title), description(description), director(director),
 		yearOfRelease(yearOfRelease), duration(duration), genre(genre) {
 	}
 
-	static Movie movieFromMovieDto(const MovieDto& mDto) {
-
-		return Movie(mDto.title, mDto.description, mDto.director,
-			mDto.yearOfRelease, mDto.duration, mDto.genre);
-
-	}
+    void setId(int newId) {
+        id_movie = newId;
+    }
 
     //getters
     int getId() {
@@ -63,7 +59,7 @@ public:
         return genre;
     }
 
-
+    friend class MobvieMapper;
 };
 
 

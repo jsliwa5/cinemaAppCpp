@@ -1,51 +1,74 @@
 ﻿#include <iostream>
 #include "Database.h"
 #include "Showing.h"
+#include "User.h"
+#include "Movie.h"
+#include "Reservation.h"
+#include "Review.h"
+#include "MovieRepository.h"
 
 int main() {
     try {
-        // Pobranie instancji bazy danych
         soci::session& sql = Database::getInstance().getSession();
 
-        // 1️⃣ Tworzenie tabeli, jeśli nie istnieje
+        sql << "CREATE TABLE IF NOT EXISTS Users ("
+            "id_user INTEGER PRIMARY KEY AUTOINCREMENT, "
+            "firstName TEXT, "
+            "lastName TEXT, "
+            "email TEXT, "
+            "dateOfRegistration TEXT)";
+
+        sql << "CREATE TABLE IF NOT EXISTS Movies ("
+            "id_movie INTEGER PRIMARY KEY AUTOINCREMENT, "
+            "title TEXT, "
+            "description TEXT, "
+            "director TEXT, "
+            "yearOfRelease INTEGER, "
+            "duration INTEGER, "
+            "genre TEXT)";
+
         sql << "CREATE TABLE IF NOT EXISTS Showings ("
             "id_showing INTEGER PRIMARY KEY AUTOINCREMENT, "
             "id_movie INTEGER, "
             "date TEXT, "
             "room TEXT, "
-            "availableSits INTEGER)";
+            "availableSits INTEGER, "
+            "FOREIGN KEY(id_movie) REFERENCES Movies(id_movie))";
 
-        // 2️⃣ Tworzenie obiektu Showing
-        Showing s("2024-10-24", "Czerwona", 100, 2); // ID = -1, bo autoincrement
+        sql << "CREATE TABLE IF NOT EXISTS Reservations ("
+            "id_reservation INTEGER PRIMARY KEY AUTOINCREMENT, "
+            "dateOfReservation TEXT, "
+            "numberOfSits INTEGER, "
+            "id_user INTEGER, "
+            "id_showing INTEGER, "
+            "FOREIGN KEY(id_user) REFERENCES Users(id_user), "
+            "FOREIGN KEY(id_showing) REFERENCES Showings(id_showing))";
 
-        // 3️⃣ Wstawienie obiektu do bazy
-        sql << "INSERT INTO Showings (id_movie, date, room, availableSits) "
-            "VALUES (:id_movie, :date, :room, :availableSits)",
-            soci::use(s);
+        sql << "CREATE TABLE IF NOT EXISTS Reviews ("
+            "id_review INTEGER PRIMARY KEY AUTOINCREMENT, "
+            "rating INTEGER, "
+            "comment TEXT, "
+            "dateOfAdding TEXT, "
+            "id_user INTEGER, "
+            "id_movie INTEGER, "
+            "FOREIGN KEY(id_user) REFERENCES Users(id_user), "
+            "FOREIGN KEY(id_movie) REFERENCES Movies(id_movie))";
 
-        std::cout << "Seans zapisany do bazy!" << std::endl;
+        std::cout << "✅ Tabele utworzone.\n";
 
-        // 4️⃣ Pobranie ostatniego ID
-        int lastId;
-        sql << "SELECT last_insert_rowid()", soci::into(lastId);
+    
+        MovieRepository movieRepo;
 
-        // 5️⃣ Odczytanie rekordu
-        Showing s2;
-        sql << "SELECT id_showing, id_movie, date, room, availableSits FROM Showings WHERE id_showing = :id",
-            soci::use(lastId), soci::into(s2);
-
-        // 6️⃣ Wyświetlenie pobranego obiektu
-        std::cout << "Odczytano seans: "
-            << "ID: " << s2.getId()
-            << ", Film ID: " << s2.getIdMovie()
-            << ", Data: " << s2.getDate()
-            << ", Sala: " << s2.getRoom()
-            << ", Dostępne miejsca: " << s2.getAvailableSits()
-            << std::endl;
+        // 3️⃣ Tworzenie i zapisywanie filmu
+        auto found = movieRepo.findMovieById(7);
+        if (found.has_value()) {
+            std::cout << "🔍 Znaleziono film: " << found->getTitle()
+                << " (ID: " << found->getId() << ")" << std::endl;
+        }
 
     }
     catch (const std::exception& e) {
-        std::cerr << "Błąd: " << e.what() << std::endl;
+        std::cerr << "❌ Błąd: " << e.what() << std::endl;
     }
 
     return 0;

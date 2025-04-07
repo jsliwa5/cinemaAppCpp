@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -148,16 +148,25 @@
   <ItemGroup>
     <ClInclude Include="Database.h" />
     <ClInclude Include="Movie.h" />
-    <ClInclude Include="MovieDto.h" />
+    <ClInclude Include="MovieMapper.h" />
+    <ClInclude Include="RequestMovieDto.h" />
     <ClInclude Include="MovieService.h" />
+    <ClInclude Include="RequestReservationDto.h" />
+    <ClInclude Include="RequestReviewDto.h" />
+    <ClInclude Include="RequestShowingDto.h" />
+    <ClInclude Include="RequestUserDto.h" />
     <ClInclude Include="Reservation.h" />
+    <ClInclude Include="ReservationMapper.h" />
     <ClInclude Include="ReservationRepository.h" />
     <ClInclude Include="Review.h" />
+    <ClInclude Include="ReviewMapper.h" />
     <ClInclude Include="ReviewRepository.h" />
     <ClInclude Include="Showing.h" />
     <ClInclude Include="MovieRepository.h" />
+    <ClInclude Include="ShowingMapper.h" />
     <ClInclude Include="ShowingRepository.h" />
     <ClInclude Include="User.h" />
+    <ClInclude Include="UserMapper.h" />
     <ClInclude Include="UserRepository.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -66,6 +66,7 @@ public:
 		id_showing = newShowingId;
 	}
 
+	friend class ReservationMapper;
 };
 
 namespace soci {

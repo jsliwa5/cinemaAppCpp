@@ -11,10 +11,15 @@ private:
 
 public:
 
-    void saveMovie(const Movie& movie) {
+    void saveMovie(Movie& movie) {
         sql << "INSERT INTO Movies (title, description, director, yearOfRelease, duration, genre) "
             "VALUES (:title, :description, :director, :yearOfRelease, :duration, :genre)",
             soci::use(movie);
+
+        int id;
+        sql << "SELECT last_insert_rowid()", soci::into(id);
+        movie.setId(id); // <- bez tego nie bêdzie ID
+
     }
 
     std::optional<Movie> findMovieById(int id) {
@@ -47,6 +52,7 @@ public:
         if (ind == soci::i_ok) {
             return movie;
         }
+        std::cerr << "nie znaleziono filmu";
         return std::nullopt;
     }
 

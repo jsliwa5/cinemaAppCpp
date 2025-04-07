@@ -25,6 +25,9 @@
     <Filter Include="Header Files\dtos">
       <UniqueIdentifier>{3f9027bd-73bd-4312-a3cc-e1b9221f1afd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\mappers">
+      <UniqueIdentifier>{5801c8c1-bd90-4879-b7db-7b16f0f68da0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -68,8 +71,35 @@
     <ClInclude Include="MovieService.h">
       <Filter>Header Files\services</Filter>
     </ClInclude>
-    <ClInclude Include="MovieDto.h">
+    <ClInclude Include="RequestMovieDto.h">
       <Filter>Header Files\dtos</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestShowingDto.h">
+      <Filter>Header Files\dtos</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestReservationDto.h">
+      <Filter>Header Files\dtos</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestReviewDto.h">
+      <Filter>Header Files\dtos</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestUserDto.h">
+      <Filter>Header Files\dtos</Filter>
+    </ClInclude>
+    <ClInclude Include="MovieMapper.h">
+      <Filter>Header Files\mappers</Filter>
+    </ClInclude>
+    <ClInclude Include="ReservationMapper.h">
+      <Filter>Header Files\mappers</Filter>
+    </ClInclude>
+    <ClInclude Include="ReviewMapper.h">
+      <Filter>Header Files\mappers</Filter>
+    </ClInclude>
+    <ClInclude Include="ShowingMapper.h">
+      <Filter>Header Files\mappers</Filter>
+    </ClInclude>
+    <ClInclude Include="UserMapper.h">
+      <Filter>Header Files\mappers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
