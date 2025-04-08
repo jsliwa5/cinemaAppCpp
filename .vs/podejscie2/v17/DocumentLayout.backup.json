@@ -3,20 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|solutionrelative:podejscie2\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\MovieRepository.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|solutionrelative:podejscie2\\MovieRepository.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\MovieService.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|solutionrelative:podejscie2\\MovieService.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|solutionrelative:podejscie2\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\ReservationRepository.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|solutionrelative:podejscie2\\ReservationRepository.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\Movie.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|solutionrelative:podejscie2\\Movie.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\User.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|solutionrelative:podejscie2\\User.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\Showing.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|solutionrelative:podejscie2\\Showing.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\Review.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|solutionrelative:podejscie2\\Review.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\Reservation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|solutionrelative:podejscie2\\Reservation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\MovieMapper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|solutionrelative:podejscie2\\MovieMapper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\ReviewRepository.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|solutionrelative:podejscie2\\ReviewRepository.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\ShowingRepository.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|solutionrelative:podejscie2\\ShowingRepository.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\UserRepository.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|solutionrelative:podejscie2\\UserRepository.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\Database.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|solutionrelative:podejscie2\\Database.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\MovieService.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|solutionrelative:podejscie2\\MovieService.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\RequestMovieDto.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -31,14 +71,6 @@
       "RelativeMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|solutionrelative:podejscie2\\ShowingMapper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\ShowingRepository.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|solutionrelative:podejscie2\\ShowingRepository.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\MovieMapper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|solutionrelative:podejscie2\\MovieMapper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\ReviewMapper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A807D276-443E-480B-9956-30407E601FE4}|podejscie2\\podejscie2.vcxproj|solutionrelative:podejscie2\\ReviewMapper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -50,11 +82,115 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "Reservation.h",
+              "DocumentMoniker": "C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\Reservation.h",
+              "RelativeDocumentMoniker": "podejscie2\\Reservation.h",
+              "ToolTip": "C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\Reservation.h",
+              "RelativeToolTip": "podejscie2\\Reservation.h",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-08T16:33:41.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Review.h",
+              "DocumentMoniker": "C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\Review.h",
+              "RelativeDocumentMoniker": "podejscie2\\Review.h",
+              "ToolTip": "C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\Review.h",
+              "RelativeToolTip": "podejscie2\\Review.h",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAFYAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-08T16:33:15.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Showing.h",
+              "DocumentMoniker": "C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\Showing.h",
+              "RelativeDocumentMoniker": "podejscie2\\Showing.h",
+              "ToolTip": "C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\Showing.h",
+              "RelativeToolTip": "podejscie2\\Showing.h",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAFoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-08T16:33:00.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "User.h",
+              "DocumentMoniker": "C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\User.h",
+              "RelativeDocumentMoniker": "podejscie2\\User.h",
+              "ToolTip": "C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\User.h",
+              "RelativeToolTip": "podejscie2\\User.h",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADUAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-08T16:32:45.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReservationRepository.h",
+              "DocumentMoniker": "C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\ReservationRepository.h",
+              "RelativeDocumentMoniker": "podejscie2\\ReservationRepository.h",
+              "ToolTip": "C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\ReservationRepository.h",
+              "RelativeToolTip": "podejscie2\\ReservationRepository.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-08T16:25:00.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ReviewRepository.h",
+              "DocumentMoniker": "C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\ReviewRepository.h",
+              "RelativeDocumentMoniker": "podejscie2\\ReviewRepository.h",
+              "ToolTip": "C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\ReviewRepository.h",
+              "RelativeToolTip": "podejscie2\\ReviewRepository.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-08T16:24:59.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserRepository.h",
+              "DocumentMoniker": "C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\UserRepository.h",
+              "RelativeDocumentMoniker": "podejscie2\\UserRepository.h",
+              "ToolTip": "C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\UserRepository.h",
+              "RelativeToolTip": "podejscie2\\UserRepository.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-08T16:24:58.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Database.h",
+              "DocumentMoniker": "C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\Database.h",
+              "RelativeDocumentMoniker": "podejscie2\\Database.h",
+              "ToolTip": "C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\Database.h",
+              "RelativeToolTip": "podejscie2\\Database.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-07T20:13:32.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "ShowingRepository.h",
               "DocumentMoniker": "C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\ShowingRepository.h",
               "RelativeDocumentMoniker": "podejscie2\\ShowingRepository.h",
@@ -73,40 +209,40 @@
               "RelativeDocumentMoniker": "podejscie2\\Movie.h",
               "ToolTip": "C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\Movie.h",
               "RelativeToolTip": "podejscie2\\Movie.h",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAEgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-07T19:19:59.45Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Main.cpp",
               "DocumentMoniker": "C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\Main.cpp",
               "RelativeDocumentMoniker": "podejscie2\\Main.cpp",
               "ToolTip": "C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\Main.cpp",
               "RelativeToolTip": "podejscie2\\Main.cpp",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAEEAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEgAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-07T19:08:56.985Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MovieRepository.h",
               "DocumentMoniker": "C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\MovieRepository.h",
               "RelativeDocumentMoniker": "podejscie2\\MovieRepository.h",
-              "ToolTip": "C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\MovieRepository.h",
-              "RelativeToolTip": "podejscie2\\MovieRepository.h",
-              "ViewState": "AgIAACAAAAAAAAAAAAAYwDUAAAAJAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\MovieRepository.h*",
+              "RelativeToolTip": "podejscie2\\MovieRepository.h*",
+              "ViewState": "AgIAABwAAAAAAAAAAAAYwDEAAABkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-03-21T19:34:10.865Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 13,
               "Title": "MovieService.h",
               "DocumentMoniker": "C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\MovieService.h",
               "RelativeDocumentMoniker": "podejscie2\\MovieService.h",
@@ -132,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 14,
               "Title": "RequestMovieDto.h",
               "DocumentMoniker": "C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\RequestMovieDto.h",
               "RelativeDocumentMoniker": "podejscie2\\RequestMovieDto.h",
@@ -140,12 +276,11 @@
               "RelativeToolTip": "podejscie2\\RequestMovieDto.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-07T19:00:45.696Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T19:00:45.696Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 15,
               "Title": "UserMapper.h",
               "DocumentMoniker": "C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\UserMapper.h",
               "RelativeDocumentMoniker": "podejscie2\\UserMapper.h",
@@ -153,12 +288,11 @@
               "RelativeToolTip": "podejscie2\\UserMapper.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-07T18:56:17.268Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T18:56:17.268Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 16,
               "Title": "ShowingMapper.h",
               "DocumentMoniker": "C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\ShowingMapper.h",
               "RelativeDocumentMoniker": "podejscie2\\ShowingMapper.h",
@@ -166,12 +300,11 @@
               "RelativeToolTip": "podejscie2\\ShowingMapper.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-07T18:54:08.922Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T18:54:08.922Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
               "Title": "ReviewMapper.h",
               "DocumentMoniker": "C:\\Users\\kubal\\Desktop\\edziennik\\projekt\\podejscie2\\podejscie2\\ReviewMapper.h",
               "RelativeDocumentMoniker": "podejscie2\\ReviewMapper.h",
@@ -179,8 +312,7 @@
               "RelativeToolTip": "podejscie2\\ReviewMapper.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-07T18:52:20.164Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T18:52:20.164Z"
             }
           ]
         }

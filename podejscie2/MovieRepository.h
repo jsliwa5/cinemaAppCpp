@@ -23,14 +23,14 @@ public:
     }
 
     std::optional<Movie> findMovieById(int id) {
-        Movie movie;
-        soci::indicator ind;
-        sql << "SELECT * FROM Movies WHERE id_movie = :id", soci::use(id), soci::into(movie, ind);
-
-        if (ind == soci::i_ok) {
-            return movie;
+        try {
+            Movie m;
+            sql << "SELECT * FROM Movies WHERE id_movie = :id", soci::use(id), soci::into(m);
+            return m;
         }
-        return std::nullopt;
+        catch (const std::exception& _) {
+            return std::nullopt;
+        }
     }
 
     void updateMovieById(int id, const Movie& movie) {
@@ -45,15 +45,15 @@ public:
     }
 
     std::optional<Movie> findMovieByTitle(const std::string& title) {
-        Movie movie;
-        soci::indicator ind;
-        sql << "SELECT * FROM Movies WHERE title = :title", soci::use(title), soci::into(movie, ind);
-
-        if (ind == soci::i_ok) {
+        try {
+            Movie movie;
+            sql << "SELECT * FROM Movies WHERE title = :title", soci::use(title), soci::into(movie);
             return movie;
         }
-        std::cerr << "nie znaleziono filmu";
-        return std::nullopt;
+       catch (const std::exception& _) {
+           return std::nullopt;
+       }
+        
     }
 
     bool existsById(int id) {

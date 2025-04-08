@@ -31,32 +31,45 @@ public:
     }
 
     //getters
-    int getId() {
+    int getId() const{
         return id_movie;
     }
 
-    std::string getTitle() {
+    std::string getTitle( )const {
         return title;
     }
 
-    std::string getDescription() {
+    std::string getDescription() const {
         return description;
     }
 
-    std::string getDirector() {
+    std::string getDirector() const {
         return director;
     }
 
-    int getYearOfRelease() {
+    int getYearOfRelease() const {
         return yearOfRelease;
     }
 
-    int getDuration() {
+    int getDuration() const {
         return duration;
     }
 
-    std::string getGenre() {
+    std::string getGenre() const {
         return genre;
+    }
+
+    Movie& operator=(const Movie& other) {
+        if (this != &other) {
+            id_movie = other.id_movie;
+            title = other.title;
+            description = other.description;
+            director = other.director;
+            yearOfRelease = other.yearOfRelease;
+            duration = other.duration;
+            genre = other.genre;
+        }
+        return *this;
     }
 
     friend class MobvieMapper;
@@ -81,7 +94,7 @@ namespace soci {
             );
         }
 
-        static void to_base(Movie& movie, values& v, indicator& ind) {
+        static void to_base(const Movie& movie, values& v, indicator& ind) {
             v.set("id_movie", movie.getId());  // Metoda getId() musi byæ dodana do klasy Movie
             v.set("title", movie.getTitle());
             v.set("description", movie.getDescription());

@@ -29,15 +29,17 @@ public:
     }
 
     std::optional<Review> findReviewById(int id) {
-        Review review;
-        soci::indicator ind;
-        sql << "SELECT * FROM Reviews WHERE id_review = :id",
-            soci::use(id), soci::into(review, ind);
+        try {
+            Review review;
+            sql << "SELECT * FROM Reviews WHERE id_review = :id",
+                soci::use(id), soci::into(review);
 
-        if (ind == soci::i_ok) {
             return review;
         }
-        return std::nullopt;
+        
+        catch(const std::exception & _){
+            return std::nullopt;
+        }
     }
 
     void updateReviewById(int id, const Review& review) {

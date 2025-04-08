@@ -42,6 +42,17 @@ public:
 		return dateOfRegistration; 
 	}
 
+	User& operator=(const User& other) {
+		if (this != &other) {
+			id_user = other.id_user;
+			firstName = other.firstName;
+			lastName = other.lastName;
+			email = other.email;
+			dateOfRegistration = other.dateOfRegistration;
+		}
+		return *this;
+	}
+
 };
 
 namespace soci {

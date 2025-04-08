@@ -29,15 +29,18 @@ public:
     }
 
     std::optional<Reservation> findReservationById(int id) {
-        Reservation reservation;
-        soci::indicator ind;
-        sql << "SELECT * FROM Reservations WHERE id_reservation = :id",
-            soci::use(id), soci::into(reservation, ind);
-
-        if (ind == soci::i_ok) {
+        try {
+            Reservation reservation;
+            soci::indicator ind;
+            sql << "SELECT * FROM Reservations WHERE id_reservation = :id",
+                soci::use(id), soci::into(reservation);
+            
             return reservation;
+            
         }
-        return std::nullopt;
+        catch (const std::exception& _){
+            return std::nullopt;
+        }
     }
 
     void updateReservationById(int id, const Reservation& reservation) {

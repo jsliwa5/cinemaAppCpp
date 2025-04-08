@@ -79,6 +79,17 @@ public:
         }
     }
 
+    Showing& operator=(const Showing& other) {
+        if (this != &other) {
+            id_showing = other.id_showing;
+            date = other.date;
+            room = other.room;
+            availableSits = other.availableSits;
+            id_movie = other.id_movie;
+        }
+        return *this;
+    }
+
 };
 
 

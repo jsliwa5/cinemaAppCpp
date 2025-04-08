@@ -24,14 +24,17 @@ public:
     }
 
     std::optional<Showing> findShowingById(int id) {
-        Showing showing;
-        soci::indicator ind;
-        sql << "SELECT * FROM Showings WHERE id_showing = :id", soci::use(id), soci::into(showing, ind);
+        try {
+            Showing showing;
 
-        if (ind == soci::i_ok) {
+            sql << "SELECT * FROM Showings WHERE id_showing = :id", soci::use(id), soci::into(showing);
+
             return showing;
         }
-        return std::nullopt;
+        
+        catch(const std::exception & _) {
+            return std::nullopt;
+        }
     }
 
     void updateShowingById(int id, const Showing& showing) {

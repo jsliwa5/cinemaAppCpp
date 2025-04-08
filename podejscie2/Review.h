@@ -74,6 +74,18 @@ public:
 		id_movie = newMovieId;
 	}
 
+	Review& operator=(const Review& other) {
+		if (this != &other) {
+			id_review = other.id_review;
+			rating = other.rating;
+			comment = other.comment;
+			dateOfAdding = other.dateOfAdding;
+			id_user = other.id_user;
+			id_movie = other.id_movie;
+		}
+		return *this;
+	}
+
 };
 
 namespace soci {

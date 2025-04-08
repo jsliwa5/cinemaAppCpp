@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <optional>
 #include "Database.h"
 #include "Showing.h"
 #include "User.h"
@@ -59,12 +60,19 @@ int main() {
     
         MovieRepository movieRepo;
 
+        //Movie m("test", "test", "test", 2000, 120, "test");
+        //movieRepo.saveMovie(m);
+
         // 3️⃣ Tworzenie i zapisywanie filmu
-        auto found = movieRepo.findMovieById(7);
-        if (found.has_value()) {
+
+        /*if (found.has_value()) {
             std::cout << "🔍 Znaleziono film: " << found->getTitle()
                 << " (ID: " << found->getId() << ")" << std::endl;
-        }
+        }*/
+
+        auto result = movieRepo.findMovieById(7).value();
+
+        std::cout << std::endl << result.getDescription() << std::endl;
 
     }
     catch (const std::exception& e) {

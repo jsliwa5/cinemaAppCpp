@@ -18,14 +18,16 @@ public:
     }
 
     std::optional<User> findUserById(int id) {
-        User user;
-        soci::indicator ind;
-        sql << "SELECT * FROM Users WHERE id_user = :id", soci::use(id), soci::into(user, ind);
+        try {
+            User user;
 
-        if (ind == soci::i_ok) {
+            sql << "SELECT * FROM Users WHERE id_user = :id", soci::use(id), soci::into(user);
+
             return user;
+        } 
+        catch (const std::exception & _){
+            return std::nullopt;
         }
-        return std::nullopt;
     }
 
     void updateUserById(int id, const User& user) {
@@ -39,14 +41,17 @@ public:
     }
 
     std::optional<User> findUserByLastName(const std::string& lastName) {
-        User user;
-        soci::indicator ind;
-        sql << "SELECT * FROM Users WHERE lastName = :lastName", soci::use(lastName), soci::into(user, ind);
 
-        if (ind == soci::i_ok) {
+        try {
+            User user;
+
+            sql << "SELECT * FROM Users WHERE lastName = :lastName", soci::use(lastName), soci::into(user);
+
             return user;
         }
-        return std::nullopt;
+        catch(const std::exception & _){
+            return std::nullopt;
+        }
     }
 
     bool existsById(int id) {

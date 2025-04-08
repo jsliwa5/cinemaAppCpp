@@ -66,6 +66,18 @@ public:
 		id_showing = newShowingId;
 	}
 
+	Reservation& operator=(const Reservation& other) {
+		if (this != &other) {
+			id_reservation = other.id_reservation;
+			dateOfReservation = other.dateOfReservation;
+			numberOfSits = other.numberOfSits;
+			id_user = other.id_user;
+			id_showing = other.id_showing;
+		}
+		return *this;
+	}
+
+
 	friend class ReservationMapper;
 };
 
