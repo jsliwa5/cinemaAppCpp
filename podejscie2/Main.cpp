@@ -7,6 +7,7 @@
 #include "Reservation.h"
 #include "Review.h"
 #include "MovieRepository.h"
+#include "MovieService.h"
 
 int main() {
     try {
@@ -58,7 +59,7 @@ int main() {
         std::cout << "✅ Tabele utworzone.\n";
 
     
-        MovieRepository movieRepo;
+        MovieService movieService;
 
         //Movie m("test", "test", "test", 2000, 120, "test");
         //movieRepo.saveMovie(m);
@@ -69,10 +70,9 @@ int main() {
             std::cout << "🔍 Znaleziono film: " << found->getTitle()
                 << " (ID: " << found->getId() << ")" << std::endl;
         }*/
+        RequestMovieDto dto("Szybcy i wsciekli", "slabe", "Justin Lee", 2000, 180, "szybkie");
 
-        auto result = movieRepo.findMovieById(7).value();
-
-        std::cout << std::endl << result.getDescription() << std::endl;
+        movieService.updateMovieById(3, dto);
 
     }
     catch (const std::exception& e) {

@@ -44,7 +44,7 @@ public:
 
         sql << "UPDATE Showings SET date = :date, room = :room, availableSits = :availableSits, "
             "id_movie = :id_movie WHERE id_showing = :id",
-            soci::use(showing), soci::use(id);
+            soci::use(showing), soci::use(id, "id");
     }
 
     void deleteShowingById(int id) {

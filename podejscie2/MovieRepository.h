@@ -37,7 +37,7 @@ public:
         sql << "UPDATE Movies SET title = :title, description = :description, director = :director, "
             "yearOfRelease = :yearOfRelease, duration = :duration, genre = :genre "
             "WHERE id_movie = :id",
-            soci::use(movie), soci::use(id);
+            soci::use(movie), soci::use(id, "id");
     }
 
     void deleteMovieById(int id) {

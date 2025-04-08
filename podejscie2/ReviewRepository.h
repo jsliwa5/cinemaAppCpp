@@ -53,12 +53,19 @@ public:
         sql << "UPDATE Reviews SET rating = :rating, comment = :comment, "
             "dateOfAdding = :dateOfAdding, id_user = :id_user, id_movie = :id_movie "
             "WHERE id_review = :id",
-            soci::use(review), soci::use(id);
+            soci::use(review), soci::use(id, "id");
     }
 
     void deleteReviewById(int id) {
         sql << "DELETE FROM Reviews WHERE id_review = :id", soci::use(id);
     }
+
+    bool existsById(int id) {
+        int count = 0;
+        sql << "SELECT COUNT(*) FROM Reviews WHERE id_review = :id", soci::use(id), soci::into(count);
+        return count > 0;
+    }
+
 
 };
 

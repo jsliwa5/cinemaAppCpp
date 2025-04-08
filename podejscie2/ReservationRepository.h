@@ -54,11 +54,17 @@ public:
         sql << "UPDATE Reservations SET dateOfReservation = :dateOfReservation, "
             "numberOfSits = :numberOfSits, id_user = :id_user, id_showing = :id_showing "
             "WHERE id_reservation = :id",
-            soci::use(reservation), soci::use(id);
+            soci::use(reservation), soci::use(id, "id");
     }
 
     void deleteReservationById(int id) {
         sql << "DELETE FROM Reservations WHERE id_reservation = :id", soci::use(id);
+    }
+
+    bool existsById(int id) {
+        int count = 0;
+        sql << "SELECT COUNT(*) FROM Reservations WHERE id_reservation = :id", soci::use(id), soci::into(count);
+        return count > 0;
     }
 
 

@@ -101,5 +101,17 @@
     <ClInclude Include="UserMapper.h">
       <Filter>Header Files\mappers</Filter>
     </ClInclude>
+    <ClInclude Include="ReservationService.h">
+      <Filter>Header Files\services</Filter>
+    </ClInclude>
+    <ClInclude Include="ReviewService.h">
+      <Filter>Header Files\services</Filter>
+    </ClInclude>
+    <ClInclude Include="ShowingService.h">
+      <Filter>Header Files\services</Filter>
+    </ClInclude>
+    <ClInclude Include="UserService.h">
+      <Filter>Header Files\services</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

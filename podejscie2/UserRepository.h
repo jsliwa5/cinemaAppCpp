@@ -33,7 +33,7 @@ public:
     void updateUserById(int id, const User& user) {
         sql << "UPDATE Users SET firstName = :firstName, lastName = :lastName, email = :email, "
             "dateOfRegistration = :dateOfRegistration WHERE id_user = :id",
-            soci::use(user), soci::use(id);
+            soci::use(user), soci::use(id, "id");
     }
 
     void deleteUserById(int id) {
